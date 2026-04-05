@@ -48,6 +48,7 @@ export default function MenuItemModal({ item, onClose }) {
               src={item.image}
               alt={item.name}
               className="modal-content-img"
+              loading="lazy"
             />
           </div>
 

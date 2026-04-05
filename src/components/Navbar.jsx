@@ -134,6 +134,9 @@ export default function Navbar({ darkMode, toggleDarkMode, language, toggleLangu
             )}
             <span>{darkMode ? "Light Mode" : "Dark Mode"}</span>
           </button>
+          <button className="theme-toggle" onClick={toggleLanguage} style={{ marginTop: '16px' }}>
+            <span>{language === "es" ? "Cambiar a Inglés (EN)" : "Switch to Spanish (ES)"}</span>
+          </button>
         </div>
       </div>
     </nav>

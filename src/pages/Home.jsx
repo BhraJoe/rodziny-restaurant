@@ -58,8 +58,9 @@ export default function Home({ language }) {
             </div>
             <div className="welcome-image">
                <img
-                 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=1024"
+                 src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format,compress&fit=crop&q=60&fm=webp&w=1024"
                  alt={translations[language].premiumDining}
+                 loading="lazy"
                />
             </div>
           </motion.div>
@@ -143,8 +144,9 @@ export default function Home({ language }) {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
                <img
-                 src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=800"
+                 src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format,compress&fit=crop&q=60&fm=webp&w=800"
                  alt={translations[language].ourKitchen}
+                 loading="lazy"
                />
             </motion.div>
           </div>
