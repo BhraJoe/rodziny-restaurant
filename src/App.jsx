@@ -9,6 +9,8 @@ import Menu from "./pages/Menu";
 import StorePage from "./pages/StorePage";
 import ContactPage from "./pages/ContactPage";
 
+
+
 export default function App() {
   const [darkMode, setDarkMode] = useState(() => {
     try {
