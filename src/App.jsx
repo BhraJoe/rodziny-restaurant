@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -49,8 +49,17 @@ export default function App() {
   const toggleDarkMode = () => setDarkMode((prev) => !prev);
   const toggleLanguage = () => setLanguage((prev) => prev === "es" ? "en" : "es");
 
+  const ScrollToTop = () => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+    return null;
+  };
+
   return (
     <Router>
+      <ScrollToTop />
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} language={language} toggleLanguage={toggleLanguage} />
       <main>
         <Routes>
