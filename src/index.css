@@ -167,11 +167,9 @@ h6 {
 .section-header h2 {
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 14px;
-  background: linear-gradient(
-    135deg,
-    var(--accent-gold),
-    var(--accent-gold-dark)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-gold),
+      var(--accent-gold-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -193,7 +191,8 @@ h6 {
   z-index: 1000;
   padding: 24px 0;
   transition: all var(--transition-med);
-  pointer-events: none; /* Let clicks pass through the container */
+  pointer-events: none;
+  /* Let clicks pass through the container */
 }
 
 .premium-nav.scrolled {
@@ -208,7 +207,8 @@ h6 {
 }
 
 .glass-panel {
-  pointer-events: auto; /* Re-enable clicks for the panel */
+  pointer-events: auto;
+  /* Re-enable clicks for the panel */
   background: var(--glass-surface);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -437,16 +437,20 @@ h6 {
   .nav-center-links {
     display: none;
   }
+
   .navbar-actions .theme-toggle,
   .navbar-actions .language-toggle {
     display: none;
   }
+
   .hamburger {
     display: flex;
   }
+
   .mobile-menu {
     display: flex;
   }
+
   .navbar-inner {
     padding: 0 8px 0 24px;
     justify-content: space-between;
@@ -466,7 +470,8 @@ h6 {
 
 .hero-bg {
   position: absolute;
-  inset: -100px 0 0 0; /* Extra height for parallax */
+  inset: -100px 0 0 0;
+  /* Extra height for parallax */
   z-index: 0;
   background-size: cover;
   background-position: center;
@@ -488,18 +493,18 @@ h6 {
   align-items: center;
   gap: 12px;
   background: var(--glass-surface);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  padding: 10px 24px;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding: 12px 32px;
   border-radius: var(--radius-full);
-  border: 1px solid var(--border-medium);
+  border: 1px solid var(--accent-gold);
   color: var(--accent-gold);
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 1.05rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 16px;
-  box-shadow: var(--shadow-md);
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+  box-shadow: 0 0 20px rgba(216, 160, 58, 0.2);
 }
 
 .sparkle {
@@ -519,11 +524,9 @@ h6 {
 .hero h1 em {
   font-style: italic;
   font-weight: 400;
-  background: linear-gradient(
-    135deg,
-    var(--accent-gold-light),
-    var(--accent-gold-dark)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-gold-light),
+      var(--accent-gold-dark));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -560,11 +563,9 @@ h6 {
 }
 
 .btn-primary {
-  background: linear-gradient(
-    135deg,
-    var(--accent-gold),
-    var(--accent-gold-dark)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-gold),
+      var(--accent-gold-dark));
   color: #fff;
   border: 1px solid transparent;
   box-shadow: 0 8px 24px rgba(216, 160, 58, 0.35);
@@ -573,11 +574,9 @@ h6 {
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 32px rgba(216, 160, 58, 0.5);
-  background: linear-gradient(
-    135deg,
-    var(--accent-gold-light),
-    var(--accent-gold)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-gold-light),
+      var(--accent-gold));
 }
 
 .btn-glow {
@@ -589,12 +588,10 @@ h6 {
   position: absolute;
   inset: -2px;
   border-radius: var(--radius-full);
-  background: linear-gradient(
-    45deg,
-    var(--accent-gold),
-    var(--accent-warm),
-    var(--accent-gold)
-  );
+  background: linear-gradient(45deg,
+      var(--accent-gold),
+      var(--accent-warm),
+      var(--accent-gold));
   z-index: -1;
   filter: blur(12px);
   opacity: 0;
@@ -649,11 +646,13 @@ h6 {
 }
 
 @keyframes scrollBounce {
+
   0%,
   100% {
     top: 6px;
     opacity: 1;
   }
+
   50% {
     top: 22px;
     opacity: 0.2;
@@ -719,7 +718,8 @@ h6 {
 }
 
 .welcome-container {
-  margin-top: -40px; /* Pulls it up over the hero */
+  margin-top: -40px;
+  /* Pulls it up over the hero */
   position: relative;
   z-index: 10;
 }
@@ -804,11 +804,13 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
   .welcome-image {
     min-height: auto;
     position: static;
     display: flex;
   }
+
   .welcome-image img {
     position: static;
   }
@@ -1146,12 +1148,10 @@ h6 {
 
 .skeleton-image {
   height: 190px;
-  background: linear-gradient(
-    90deg,
-    var(--bg-secondary) 25%,
-    var(--bg-card) 50%,
-    var(--bg-secondary) 75%
-  );
+  background: linear-gradient(90deg,
+      var(--bg-secondary) 25%,
+      var(--bg-card) 50%,
+      var(--bg-secondary) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
@@ -1163,12 +1163,10 @@ h6 {
 .skeleton-line {
   height: 14px;
   border-radius: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--bg-secondary) 25%,
-    var(--bg-card) 50%,
-    var(--bg-secondary) 75%
-  );
+  background: linear-gradient(90deg,
+      var(--bg-secondary) 25%,
+      var(--bg-card) 50%,
+      var(--bg-secondary) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
   margin-bottom: 10px;
@@ -1177,6 +1175,7 @@ h6 {
 .skeleton-line.short {
   width: 60%;
 }
+
 .skeleton-line.price {
   width: 30%;
   height: 18px;
@@ -1187,6 +1186,7 @@ h6 {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }
@@ -1234,11 +1234,9 @@ h6 {
 
 .sauce-chip:hover,
 .sauce-chip.selected {
-  background: linear-gradient(
-    135deg,
-    var(--accent-gold),
-    var(--accent-gold-dark)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-gold),
+      var(--accent-gold-dark));
   color: #fff;
   border-color: transparent;
   transform: translateY(-2px);
@@ -1321,11 +1319,9 @@ h6 {
 }
 
 .btn-submit {
-  background: linear-gradient(
-    135deg,
-    var(--accent-gold),
-    var(--accent-gold-dark)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-gold),
+      var(--accent-gold-dark));
   color: #fff;
   padding: 18px 40px;
   border-radius: var(--radius-full);
@@ -1343,11 +1339,9 @@ h6 {
 .btn-submit:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 32px rgba(216, 160, 58, 0.5);
-  background: linear-gradient(
-    135deg,
-    var(--accent-gold-light),
-    var(--accent-gold)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-gold-light),
+      var(--accent-gold));
 }
 
 .contact-info {
@@ -1425,12 +1419,10 @@ h6 {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--border-medium),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--border-medium),
+      transparent);
 }
 
 .footer-logo {
@@ -1519,7 +1511,7 @@ h6 {
 
 /* ===========  RESPONSIVE DESIGN  =========== */
 
-  /* ---------- Mobile First: Small Phones (320px - 480px) ---------- */
+/* ---------- Mobile First: Small Phones (320px - 480px) ---------- */
 @media (max-width: 480px) {
   :root {
     --radius-sm: 8px;
@@ -1943,6 +1935,7 @@ h6 {
   .scroll-indicator {
     display: none !important;
   }
+
   .whatsapp-float {
     bottom: 20px;
     right: 20px;
@@ -2023,11 +2016,13 @@ h6 {
   }
 
   .welcome-image {
-    display: block !important; /* Show image on tablets */
+    display: block !important;
+    /* Show image on tablets */
   }
 
   .welcome-card {
-    margin: 0; /* Reset mobile margin */
+    margin: 0;
+    /* Reset mobile margin */
   }
 
   .welcome-features {
@@ -2098,9 +2093,11 @@ h6 {
 }
 
 /* ---------- High DPI Screens ---------- */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .hero-bg {
-    background-attachment: scroll; /* Prevent background jumping on mobile */
+    background-attachment: scroll;
+    /* Prevent background jumping on mobile */
   }
 }
 
@@ -2281,6 +2278,7 @@ h6 {
 
 /* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
