@@ -1581,8 +1581,9 @@ h6 {
   .hero-content-wrapper {
     display: flex !important;
     flex-direction: column !important;
-    gap: 2rem !important;
-    padding: 120px 20px !important;
+    gap: 1rem !important;
+    padding: 20px 20px !important;
+    min-height: auto !important;
   }
 
   .hero-content {
