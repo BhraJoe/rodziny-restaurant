@@ -19,7 +19,7 @@ export default function Hero({ language }) {
         }}
       />
 
-      <div className="hero-content-wrapper">
+      <div className="hero-content-wrapper container">
         <div className="hero-content">
           <motion.div
             className="hero-badge"
@@ -65,6 +65,8 @@ export default function Hero({ language }) {
             </a>
           </motion.div>
         </div>
+
+
 
         <motion.div
           className="scroll-indicator"
