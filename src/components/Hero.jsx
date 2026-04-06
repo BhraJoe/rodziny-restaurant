@@ -19,24 +19,7 @@ export default function Hero({ language }) {
         }}
       />
 
-      <div className="hero-content-wrapper container">
-        <motion.div
-          className="hero-image"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <img
-            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format,compress&fit=crop&q=60&fm=webp&w=800"
-            alt="Featured Dish"
-            fetchPriority="high"
-          />
-           <div className="hero-image-overlay">
-             <h3>{translations[language].featuredToday || "Featured Today"}</h3>
-             <p>{translations[language].featuredDish || "Gluten-Free Pasta Primavera"}</p>
-           </div>
-        </motion.div>
-
+      <div className="hero-content-wrapper">
         <div className="hero-content">
           <motion.div
             className="hero-badge"
